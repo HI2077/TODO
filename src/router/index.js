@@ -6,8 +6,7 @@ import { buildRouter } from '@/router/util'
 
 Vue.use(VueRouter)
 const router = new VueRouter({
-  routes: buildRouter(commonRouters),
-  mode: 'history'
+  routes: buildRouter(commonRouters)
 })
 
 router.beforeEach((to, from, next) => {
