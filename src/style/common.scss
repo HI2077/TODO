@@ -1,0 +1,35 @@
+.d-flex {
+  display: flex;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.between {
+  justify-content: space-between;
+}
+.plain-btn {
+  @extend .d-flex;
+  @extend .center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 8%;
+  cursor: pointer;
+  line-height: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+.page-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+}
+
+body {
+  --white: #ffffff;
+}
